@@ -1,0 +1,25 @@
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── org
+    │   │       └── spring
+    │   │           └── springboot
+    │   │               ├── Application.java
+    │   │               └── property
+    │   │                   ├── HomeProperties.java
+    │   │                   └── UserProperties.java
+    │   └── resources
+    │       ├── application-dev.properties
+    │       ├── application-prod.properties
+    │       └── application.properties
+    └── test
+        ├── java
+        │   └── org
+        │       └── spring
+        │           └── springboot
+        │               └── property
+        │                   ├── HomeProperties1.java
+        │                   └── PropertiesTest.java
+        └── resouorces
+            └── application.yml

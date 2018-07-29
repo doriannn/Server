@@ -7,10 +7,8 @@ import ld.text.springbootdemo.properties.HomeProperties;
 import ld.text.springbootdemo.service.CityService;
 import ld.text.springbootdemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Spring Boot properties练习
@@ -40,6 +38,11 @@ public class HomeController {
     @RequestMapping(value = "/city", method = RequestMethod.GET)
     public City findOneCity(@RequestParam(value = "cityName", required = true) String cityName) {
         return cityService.findCityByName(cityName);
+    }
+
+    @RequestMapping(value = "/city/{id}", method = RequestMethod.GET)
+    public City findCityById(@PathVariable("id") Long id) {
+        return cityService.findCityById(id);
     }
 
     @RequestMapping(value = "/user", method = RequestMethod.GET)

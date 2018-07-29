@@ -8,5 +8,29 @@ import ld.text.springbootdemo.domain.City;
 * */
 public interface CityService {
 
+    /**
+     * 根据城市名查询城市信息
+    * */
     City findCityByName(String cityName);
+
+    /**
+     * 根据城市ID 查询城市信息
+     * */
+    City findCityById(Long id);
+
+    /**
+     * 更新城市信息
+     * */
+    City updateCity(City city);
+
+    /**
+     * 增加城市信息
+     * */
+    City addCity(City city);
+
+    /**
+     * 通过ID删除城市信息
+     * */
+    City deleteCityById(Long id);
+
 }

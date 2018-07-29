@@ -13,4 +13,6 @@ import org.springframework.stereotype.Component;
 public interface CityDao {
 
     City findByName(@Param("cityName")String cityName);
+
+    City findById(@Param("CityId")Long CityId);
 }

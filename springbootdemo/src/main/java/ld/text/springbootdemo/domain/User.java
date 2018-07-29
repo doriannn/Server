@@ -1,5 +1,6 @@
 package ld.text.springbootdemo.domain;
 
+import java.io.Serializable;
 import java.sql.Date;
 
 /**
@@ -7,7 +8,9 @@ import java.sql.Date;
  *
  * Created by bysocket on 07/02/2017.
  */
-public class User {
+public class User implements Serializable {
+
+    private static final long serialVersionUID = -6621829916404553668L;
 
     private Long id;
 

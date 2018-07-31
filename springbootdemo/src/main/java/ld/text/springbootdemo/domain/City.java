@@ -1,12 +1,16 @@
 package ld.text.springbootdemo.domain;
 
+
+import java.io.Serializable;
+
 /**
  * 城市实体类
  *
  * Created by bysocket on 07/02/2017.
  */
-public class City {
+public class City implements Serializable {
 
+    private static final long serialVersionUID = 2737199711879804341L;
     /**
      * 城市编号
      */
